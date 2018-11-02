@@ -1,0 +1,5 @@
+aws s3 cp <localdrive> s3://<bucketname/folder/> --sse aws:kms -sse-kms-key-id <keyid> --profile <profilename>
+aws s3 cp s3://<bucketname/folder/> <localdrive> --sse aws:kms -sse-kms-key-id <keyid> --profile <profilename>
+
+aws s3 cp --recursive s3://<bucketname> <localdrive> --sse aws:kms --sse-kms-key-id <keyid>  --profile <profilename>
+aws s3 cp --recursive <localdrive> s3://<bucketname> --sse aws:kms --sse-kms-key-id <keyid>  --profile <profilename>
