@@ -1,6 +1,6 @@
-pip --version
-sudo pip install virtualenv
-mkdir myflaskapp
+pip --version  
+sudo pip install virtualenv  
+mkdir myflaskapp  
 cd myflaskapp
 virtualenv env
 source env/bin/activate  ( to deactivate command is:deactivate)
